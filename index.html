@@ -45,7 +45,7 @@
         </div>
     </nav>
     <!-- home -->
-    <section id="home" class="min-vh-100 d-flex align-items-center text-center">
+    <section id="home" class="section-padding min-vh-100 d-flex align-items-center text-center container">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -58,7 +58,7 @@
         </div>
     </section>
     <!-- services -->
-    <section id="services" class="section-padding border-top">
+    <section id="services" class="section-padding border-top container">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -111,7 +111,7 @@
         </div>
     </section>
     <!-- flights -->
-    <section id="flights" class="section-padding border-top">
+    <section id="flights" class="section-padding border-top container">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -173,105 +173,111 @@
 
     </section>
     <!-- hotels -->
-    <!-- <section id="hotels" class="section-padding border-top">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold"> Find Your Perfect Stay</h1>
-                        <div class="line"></div>
-                        <p>Effortlessly book hotels with us, offering top deals and exceptional stays for every traveler!</p>
+    <section  id="hotels" class="section-padding border-top container">
+        <div class="row z-3">
+            <div class="col-12 text-center">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold text-black">Secure your ideal hotel stay!</h1>
+                    <div class="text-black">
+                    <p>Offering diverse accommodations and unbeatable rates.!</p>
                     </div>
-                </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/hotel1.jpg" class="custom-hotel">
-                    <h5 class="d-flex justify-content-center pt-4">Hotel 1</h5>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/hotel2.jpg" class="custom-hotel rounded">
-                    <h5 class="d-flex justify-content-center pt-4">Hotel 1</h5>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/hotel3.jpg"  class="custom-hotel rounded">
-                    <h5 class="d-flex justify-content-center pt-4">Hotel 1</h5>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-12 text-center pt-5">
-                <form action="#" >
-                    <div class="hotel_bx">
-                        <div class="row">
-                            <div class="col">
-                                <label for="h-destination" class="form-label">Destination</label>
-                                <input type="text" class="form-control" placeholder="Destination" aria-label="h-destination" id="h-destination" required>
-                            </div>
-                            <div class="col">
-                                <label for="check-in" class="form-label">Check In</label>
-                                <input type="date" class="form-control" placeholder="check-in" aria-label="check-in" id="check-in" required>
-                            </div>
-                            <div class="col">
-                                <label for="check-out" class="form-label">Check Out</label>
-                                <input type="date" class="form-control" placeholder="check-out" aria-label="check-out" id="check-out" required>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="submit" class="form-control btn btn-brand mt-3 me-5" id="submit-btn" value="Search">
-                </form>
-            </div>
-        </div>
-    </section> -->
-    <section class="hotel_bx" id="hotels">
-        <div class="container">
-            <div class="left">
-                <div class="form-wrapper">
-                    <div class="contact-heading">
-                        <h1> Find Your Perfect Stay<span>.</span></h1>
-                        <p class="text">Effortlessly book hotels with us, offering top deals and exceptional stays for every traveler!</p>
-                    </div>
-                    <form action="#" class="hotel-form">
-                        <div class="input-wrap w-100">
-                            <input type="text" class="book-input" autocomplete="off" name="destination" required>
-                            <label>Destination</label>
-                            <img src="assets/images/destination.svg" class="form-icons">
-                        </div>
-                        <div class="input-wrap">
-                            <input type="date" class="book-input" autocomplete="off" name="check-in" required>
-                            <label class="check">Check In</label>
-                            
-                        </div>
-                        <div class="input-wrap">
-                            <input type="date" class="book-input" autocomplete="off" name="check-out" required>
-                            <label class=" check">Check Out</label>
-                            
-                        </div>
-                        <div class="input-wrap">
-                            <input type="number" class="book-input" autocomplete="off" name="rooms" required>
-                            <label>Rooms</label>
-                            <img src="assets/images/rooms.svg" class="form-icons">
-                        </div>
-                        <div class="input-wrap">
-                            <input type="number" class="book-input" autocomplete="off" name="guests" required>
-                            <label>Guests</label>
-                            <img src="assets/images/rooms.svg" class="form-icons">
-                        </div>
-                        <input type="submit" class="btn btn-brand mt-3 me-5 ms-5 rounded-pill" value="Search" >
-                    </form>       
-                </div>
-            
-            </div>
-            
-            <div class="right">
-                <div class="image-wrapper">
-                    <img src="assets/images/hotel-background.jpg" alt="" class="img">
-                </div>
-                <div class="wave-wrap">
-                    <svg class="wave" width="783" height="1536" viewbox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="wave" d="M236.705 1356.18C200.542 1483.72 65.5004 1528.54 1 1535V1H770.558C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" fill="#D9D9D9" stroke="white"/>
-                        </svg>
                 </div>
             </div>
         </div>
+        
+        <div class="custom-form">
+            <form action="#" >
+            <div class="d-flex justify-content-center pt-2 pb-4">
+                <div class="input-wrap w-100">
+                    <input type="text" class="book-input" autocomplete="off" name="destination" required>
+                    <label>Destination</label>
+                    <img src="assets/images/destination.svg" class="form-icons">
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-6">
+                    <div class="input-wrap">
+                        <input type="date" class="book-input" autocomplete="off" name="check-in" required>
+                        <label class="check">Check In</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-wrap">
+                        <input type="date" class="book-input" autocomplete="off" name="check-out" required>
+                        <label class=" check">Check Out</label>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-6">
+                    <div class="input-wrap">
+                        <input type="number" class="book-input" autocomplete="off" name="rooms" required>
+                        <label>Rooms</label>
+                        <img src="assets/images/rooms.svg" class="form-icons">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-wrap">
+                        <input type="number" class="book-input" autocomplete="off" name="guests" required>
+                        <label>Guests</label>
+                        <img src="assets/images/people.svg" class="form-icons">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6">
+                    <input type="submit" class="btn btn-brand rounded"value="Search">
+                </div>
+            </div>
+            </form>
+        </div>
+
+        <div class="row z-3">
+            <div class="col-12 text-center">
+                <div class="section-title">
+                    <h1 class="display-2 fw-semibold text-black">Book Now!</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card example-images w-100">
+                <img src="assets/images/hotel1.jpg" class=""alt="">
+                <div class="card-body">
+                  <h5 class="card-title">HOTEL MOUNT VIEW PRISTINE</h5>
+                  <p class="card-text">Rs 1799</p>
+                  <p class="card-text">Andaman</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card example-images w-100">
+                <img src="assets/images/hotel2.jpg" class=""alt="">
+                <div class="card-body">
+                    <h5 class="card-title">HOTEL MOUNT VIEW PRISTINE</h5>
+                    <p class="card-text">Rs 1799</p>
+                    <p class="card-text">Andaman</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card example-images w-100">
+                <img src="assets/images/hotel3.jpg" class=""alt="">
+                <div class="card-body">
+                    <h5 class="card-title">HOTEL MOUNT VIEW PRISTINE</h5>
+                    <p class="card-text">Rs 1799</p>
+                    <p class="card-text">Andaman</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+       
+
+
+        
     </section>
     
 
