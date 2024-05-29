@@ -20,11 +20,22 @@
     --input-text: #8c9aaf;
     --light-main-color: hsl(var(--main-hue), 91% , 55%);
 }
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
 
 body{
     font-family: var(--font-base);
     line-height: 1.7;
     color: var(--c-body);
+    background: linear-gradient(rgba(0,0,0,0.507), rgba(0,0,0,0.438)), url(../assets/images/animation.jpg) repeat;
+            background-size: cover;
+    animation: moveBackground 20s linear infinite;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -98,6 +109,10 @@ img{
 
 /* section title */
 
+#services{
+
+    background-color: var(--bg-color);
+}
 .section-title{
     margin-bottom: 40px;
 
