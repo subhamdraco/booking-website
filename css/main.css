@@ -33,9 +33,9 @@ body{
     font-family: var(--font-base);
     line-height: 1.7;
     color: var(--c-body);
-    background: linear-gradient(rgba(0,0,0,0.507), rgba(0,0,0,0.438)), url(../assets/images/animation.jpg) repeat;
-            background-size: cover;
-    animation: moveBackground 20s linear infinite;
+    background: url(../assets/images/animation.jpg) repeat;
+    background-size: cover;
+    animation: moveBackground 60s linear infinite;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -64,6 +64,7 @@ img{
 .navbar{
 
     box-shadow: var(--box-shadow);
+    
 }
 
 .navbar-nav .nav-link{
@@ -97,13 +98,25 @@ img{
     color: white;
 }
 
-/* HERO */
+.text-with-border {
+    color: white;
+    -webkit-text-stroke: 0.5px black; 
+    font-weight: 700;
+    color: var(--c-dark);
+}
+
+.custom-para{
+    font-size:15px;
+}
+
+/* HOME */
 
 #home{
 
-    background: linear-gradient(rgba(0,0,0,0.507), rgba(0,0,0,0.438)), url(../assets/images/background.jpg);
+    background: linear-gradient(rgba(55, 53, 53, 0.507), rgba(0,0,0,0.438)), url(../assets/images/background.jpg);
     background-position: center;
     background-size: cover;
+    opacity: 0.9;
 }
 
 
@@ -112,6 +125,7 @@ img{
 #services{
 
     background-color: var(--bg-color);
+    opacity: 0.9
 }
 .section-title{
     margin-bottom: 40px;
@@ -126,13 +140,6 @@ img{
     margin: 16px auto;
 }
 
-.section-title .line{
-
-    width: 60px;
-    height: 4px;
-    background-color: var(--c-brand);
-    margin: 16px auto;
-}
 
 .section-title p{
     max-width: 500px;
@@ -164,10 +171,11 @@ img{
 
 #flights{
 
-    background : linear-gradient(rgba(0,0,0,0.507), rgba(0,0,0,0.438)), url(../assets/images/background2.jpg);
+    background : url(../assets/images/background2.jpg);
     background-position: center;
     background-size: cover;
     color: white;
+    opacity: 0.9;
 }
 
 #flights .container .row:nth-child(2) .col-lg-6 img{
@@ -249,18 +257,23 @@ img{
 /* hotels */
 
 #hotels{
-
-align-items: center;
-background : linear-gradient(rgb(167, 163, 163), rgba(78, 76, 76, 0.438)), url(../assets/images/hotel-background.jpg);
+    align-items: center;
+    background : url(../assets/images/hotel-background.jpg);
     background-position: center;
     background-size: cover;
+    opacity: 0.9;
 }
 
 .example-images{
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    height: 100%;
+    
+    height: 63%;
 
+}
+.card-body{
+
+    line-height: 0.5rem;
+    margin-top: 0;
+    border: 2px;
 }
 
 .contact-heading h1{

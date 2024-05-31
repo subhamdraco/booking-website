@@ -13,3 +13,15 @@ inputs.forEach((ipt) =>{
         }
     });
 });
+
+const nav_inputs = document.querySelectorAll(".nav-link");
+
+nav_inputs.forEach((ipt)=>{
+    ipt.addEventListener("click",()=>{
+
+        nav_inputs.forEach(function(nav) {nav.classList.remove("active");});
+        ipt.classList.add("active");
+    });
+    
+    
+});
